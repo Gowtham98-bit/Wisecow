@@ -1,0 +1,11 @@
+wisecow-app/
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── .github/
+│   └── workflows/
+│       └── cicd.yml
+├── k8s/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── ingress.yaml
