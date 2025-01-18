@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wisecow-app
+spec:
+  replicas: 3  # Define the number of replicas
+  selector:
+    matchLabels:
+      app: wisecow
+  template:
+    metadata:
+      labels:
+        app: wisecow
+    spec:
+      containers:
+      - name: wisecow
+        image: <your-container-registry>/wisecow:latest  # Image from container registry
+        ports:
+        - containerPort: 5000
